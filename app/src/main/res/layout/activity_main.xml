@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/cancha">
+
+    <ImageView
+        android:layout_width="372dp"
+        android:layout_height="263dp"
+        android:src="@drawable/fotoportada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="363dp"
+        android:layout_height="220dp"
+        android:layout_marginBottom="284dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="FC 24"
+            android:textColor="@android:color/white"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/Info"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_below="@+id/Mostrar"
+            android:text="El nuevo juego de Electronic Arts. Se llamara FC 24, esto se debe por problemas con la FIFA \n\Esto no quita que el juego venga con diferentes mejoras, en su apartado de animaciones, clubes mixtos, nuevos comentaristas,nuevos modos de juego, etc."
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="367dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13sp"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="Nombre Usuario"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13sp"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="Constraseña"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="220dp"
+        android:backgroundTint="#32cd32 "
+        android:hint="Acceder"
+        android:minHeight="30dp"
+        android:onClick="onClickAcceder"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+
+
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="220dp"
+        android:backgroundTint="#32cd32 "
+        android:hint="Registrar"
+        android:minHeight="30dp"
+        android:onClick="onClickRegistrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Mostrar"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Info"
+        android:layout_gravity="center"
+        android:layout_marginBottom="220dp"
+        android:backgroundTint="#32cd32 "
+        android:hint="Mostrar"
+        android:minHeight="30dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
